@@ -3,6 +3,7 @@ plugins {
 	id 'java'
 }
 
+apply plugin: 'war'
 apply plugin: 'io.spring.dependency-management'
 
 group = 'com.crud'
@@ -16,8 +17,11 @@ repositories {
 dependencies {
 	compile 'org.springframework.boot:spring-boot-starter-web'
 	compile 'org.projectlombok:lombok'
+	annotationProcessor('org.projectlombok:lombok')
 	compile 'org.springframework.boot:spring-boot-starter-data-jpa'
 	compile 'mysql:mysql-connector-java'
 
 	testCompile 'org.springframework.boot:spring-boot-starter-test'
+
+	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
 }
