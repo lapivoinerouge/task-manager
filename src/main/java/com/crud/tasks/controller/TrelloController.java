@@ -45,11 +45,6 @@ public class TrelloController {
 
         return trelloService.createTrelloCard(trelloCardDto);
     }
-
-
-
-
-
 }
 
 
