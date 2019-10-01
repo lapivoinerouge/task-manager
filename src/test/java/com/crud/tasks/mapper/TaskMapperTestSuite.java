@@ -37,6 +37,7 @@ public class TaskMapperTestSuite {
         //then
         assertEquals("title", mappedTaskDto.getTitle());
         assertEquals("content", mappedTaskDto.getContent());
+        assertEquals(1L, mappedTaskDto.getId());
     }
 
     @Test
@@ -51,6 +52,7 @@ public class TaskMapperTestSuite {
 
         //then
         assertEquals("title 1", mappedList.get(0).getTitle());
-        assertEquals("title 2", mappedList.get(1).getTitle());
+        assertEquals(1L, mappedList.get(0).getId());
+        assertEquals("content 2", mappedList.get(1).getContent());
     }
 }
