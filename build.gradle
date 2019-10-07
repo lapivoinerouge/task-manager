@@ -37,6 +37,9 @@ dependencies {
 
 	//test
 	testCompile ('org.springframework.boot:spring-boot-starter-test')
+	
+	//actuator
+	compile ('org.springframework.boot:spring-boot-starter-actuator')
 
 	//postgres
 //	compile ('org.postgresql:postgresql')
