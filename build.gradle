@@ -40,6 +40,9 @@ dependencies {
 	
 	//actuator
 	compile ('org.springframework.boot:spring-boot-starter-actuator')
+	
+	//thymeleaf
+	compile('org.springframework.boot:spring-boot-starter-thymeleaf')
 
 	//postgres
 //	compile ('org.postgresql:postgresql')
